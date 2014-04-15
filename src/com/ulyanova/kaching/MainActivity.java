@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
         KaChingDbAdapter dbAdapter = new KaChingDbAdapter(getBaseContext());
         dbAdapter.open();
         Date date = new Date();
-        dbAdapter.createRecord(date, "1", 100.0, "Горожанка", "ainex");
+        dbAdapter.createRecord(date, "1", 100.0, "Р“РѕСЂРѕР¶Р°РЅРєР°", "ainex");
         dbAdapter.close();
         Log.w("start", "i did it!");
     }

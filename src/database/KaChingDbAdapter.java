@@ -8,6 +8,11 @@ import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 
+/**
+ * 
+ * CRUD operation implementation
+ *
+ */
 public class KaChingDbAdapter {
 
 	private Context context;
