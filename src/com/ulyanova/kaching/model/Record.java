@@ -5,7 +5,7 @@ import java.util.Date;
 public class Record {
 	private Integer id;
 	private Date date;
-	private RecordType type;
+	private Type type;
 	private Integer value;
 	private String description;
 	private String user;
@@ -29,8 +29,4 @@ public class Record {
 		this.value = value;
 	}
 	
-	private enum RecordType {
-		INCOME,
-		EXPENSE
-	};
 }

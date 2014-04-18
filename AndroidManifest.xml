@@ -22,6 +22,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.ulyanova.kaching.CategoryActivity" >
+        </activity>
+        <activity
+            android:name="com.ulyanova.kaching.CategoryAddActivity"
+            android:label="@string/title_activity_category_add"
+            android:parentActivityName="com.ulyanova.kaching.CategoryActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.ulyanova.kaching.CategoryActivity" />
+        </activity>
     </application>
 
 </manifest>

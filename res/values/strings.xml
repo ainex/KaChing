@@ -4,7 +4,12 @@
     <string name="app_name">KaChing</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="add_new_record">Add new record</string>
-	<string name="open_record_book">Open record book</string>
-	<string name="SttingsButton">Settings</string>
+    <string name="addNewRecord">Add new record</string>
+    <string name="open_record_book">Open record book</string>
+    <string name="settings_button">Settings</string>
+    <string name="r_btn_income">INCOME</string>
+    <string name="r_btn_expense">EXPENSE</string>
+    <string name="no_categories">There is no existing categories yet.</string>
+    <string name="title_activity_category_add">CategoryAddActivity</string>
+
 </resources>

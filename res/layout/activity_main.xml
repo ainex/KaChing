@@ -11,34 +11,33 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
  
-
     <Button
-        android:id="@+id/add_new_record"
+        android:id="@+id/btnAddNewRecord"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="42dp"
-        android:text="@string/add_new_record" />
+        android:text="@string/addNewRecord" />
     
      <Button
-        android:id="@+id/open_record_book"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/add_new_record"
-        android:layout_alignBottom="@+id/add_new_record"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="20dp"
-        android:text="@string/open_record_book" />
+         android:id="@+id/btnOpenRecordBook"
+         android:layout_width="120dp"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@id/btnAddNewRecord"
+         android:layout_alignBottom="@id/btnAddNewRecord"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="20dp"
+         android:text="@string/open_record_book" />
 
      <Button
-         android:id="@+id/SettingsButton"
+         android:id="@+id/btnSettings"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_alignParentBottom="true"
          android:layout_centerHorizontal="true"
          android:layout_marginBottom="96dp"
-         android:text="@string/SttingsButton" />
+         android:text="@string/settings_button" />
 
 </RelativeLayout>
