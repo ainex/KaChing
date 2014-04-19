@@ -31,13 +31,12 @@ public final class R {
         public static final int btnOpenRecordBook=0x7f080008;
         public static final int btnSave=0x7f080013;
         public static final int btnSettings=0x7f080009;
-        public static final int category_list=0x7f080006;
+        public static final int button1=0x7f080006;
         public static final int editTextCategory=0x7f08000c;
         public static final int editTextCategoryName=0x7f080004;
         public static final int editTextDate=0x7f080012;
         public static final int editTextDescription=0x7f08000f;
         public static final int editTextTotal=0x7f08000d;
-        public static final int list=0x7f080014;
         public static final int menu_add_category=0x7f080016;
         public static final int rBtnExp=0x7f08000b;
         public static final int rBtnInc=0x7f08000a;
@@ -47,6 +46,7 @@ public final class R {
         public static final int textView1=0x7f080003;
         public static final int textView2=0x7f080010;
         public static final int textView3=0x7f080011;
+        public static final int tvName=0x7f080014;
     }
     public static final class layout {
         public static final int activity_category_add=0x7f030000;

@@ -22,7 +22,7 @@ public class CategoryActivity extends  ListActivity  {
 		Cursor cursor =  dbAdapter.fetchAllCategories();
 		SimpleCursorAdapter notes = new SimpleCursorAdapter(this,
 				                R.layout.category_item, cursor, new String[] { "name" }, 
-				                new int[] { R.id.list});
+				                new int[] { R.id.tvName});
 		setListAdapter(notes);
 
 		dbAdapter.close();

@@ -4,16 +4,25 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/category_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
-    </ListView>
-
     <TextView
         android:id="@android:id/empty"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/no_categories" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:layout_weight="7" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Category" 
+        android:layout_weight="1" />
 
 </LinearLayout>
