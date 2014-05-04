@@ -46,13 +46,16 @@ public class MainActivity extends Activity implements OnClickListener {
 
 	@Override
 	public void onClick(View v) {
+		Intent intent = null;
 		switch (v.getId()) {
 		case R.id.btnAddNewRecord:
 			Log.d(TAG, "Clicked: " + ((Button) v).getText());
+			intent = new Intent(this, AddNewRecordActivity.class);
+			startActivity(intent);
 			break;
 		case R.id.btnOpenRecordBook:
 			Log.d(TAG, "Clicked: " + ((Button) v).getText());
-			Intent intent = new Intent(this, CategoryActivity.class);
+			intent = new Intent(this, CategoryActivity.class);
 			startActivity(intent);
 			break;
 		case R.id.btnSettings:

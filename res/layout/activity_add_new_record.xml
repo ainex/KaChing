@@ -3,34 +3,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <RadioButton
-        android:id="@+id/rBtnInc"
-        android:layout_width="wrap_content"
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:checked="false"
-        android:text="@string/r_btn_income" />
+        android:orientation="horizontal" >
 
-    <RadioButton
-        android:id="@+id/rBtnExp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="20dp"
-        android:checked="true"
-        android:text="@string/r_btn_expense" />
+        <RadioButton
+            android:id="@+id/rBtnInc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="@string/r_btn_income" />
+
+        <RadioButton
+            android:id="@+id/rBtnExp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:checked="true"
+            android:text="@string/r_btn_expense" />
+    </RadioGroup>
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/rBtnInc"
+        android:layout_below="@+id/radioGroupType"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="40dp"
         android:text="Category" />
@@ -82,8 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
         android:layout_below="@+id/editTextDate"
+        android:layout_marginLeft="20dp"
         android:layout_marginTop="19dp"
         android:text="Description:" />
 
@@ -104,7 +107,9 @@
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignLeft="@+id/editTextTotal"
         android:ems="10"
-        android:inputType="date" />
+        android:inputType="date"
+        android:clickable="true" 
+        android:onClick="onDateClick"/>
 
     <Button
         android:id="@+id/btnSave"
@@ -116,5 +121,6 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="52dp"
         android:text="Save" />
+
 
 </RelativeLayout>
